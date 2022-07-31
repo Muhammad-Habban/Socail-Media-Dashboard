@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <title>Frontend Mentor | Social-Media-Dashboard</title>
+</head>
+
+<body onload="firstDisplay(),secondDisplay(),thirdDisplay(),fourthDisplay()" id="body">
+    <main>
+        <div class="section1">
+            <div class="dashboard">
+                <h1>Social Media Dashboard</h1>
+                <p>Total Followers: 23,004</p>
+            </div>
+            <div class="mode">
+                <div class="float1">
+                    <p>Dark Mode</p>
+                </div>
+                <div class="float2">
+                    <input type="checkbox" name="meh" id="inputid" class="input" onclick="inputElement()">
+                    <label class="label" for="inputid"></label>
+                </div>
+            </div>
+        </div>
+        <div class="gridSection1">
+            <div class="gridPart1 background" id="backgroundId">
+                <div class="flex">
+                    <div class="flexPart1">
+                        <img src="./images/icon-facebook.svg" alt="Image">
+                    </div>
+                    <div class="flexPart2">@nathanf</div>
+                </div>
+                <div class="heading" data-val="1987" id="firstOne">
+                    00
+                </div>
+                <div class="follow">
+                    F o l l o w e r s
+                </div>
+                <div class="flexing">
+                    <div class="part1offlexing">
+                        <img src="./images/icon-up.svg" alt="Image">
+                    </div>
+                    <div class="green">
+                        12 Today
+                    </div>
+                </div>
+            </div>
+            <div class="gridPart2 background" id="backgroundId2">
+                <div class="flex">
+                    <div class="flexPart1">
+                        <img src="./images/icon-twitter.svg" alt="Image">
+                    </div>
+                    <div class="flexPart2">@nathanf</div>
+                </div>
+                <div class="heading" data-val="1044" id="secondOne">
+                    00
+                </div>
+                <div class="follow">
+                    F o l l o w e r s
+                </div>
+                <div class="flexing">
+                    <div class="part1offlexing">
+                        <img src="./images/icon-up.svg" alt="Image">
+                    </div>
+                    <div class="green">
+                        99 Today
+                    </div>
+                </div>
+            </div>
+            <div class="gridPart3 background" id="backgroundId3">
+                <div class="flex">
+                    <div class="flexPart1">
+                        <img src="./images/icon-instagram.svg" alt="Image">
+                    </div>
+                    <div class="flexPart2">@nathanf</div>
+                </div>
+                <div class="heading" data-val="11000" id="thirdOne">
+                    00
+                </div>
+                <div class="follow">
+                    F o l l o w e r s
+                </div>
+                <div class="flexing">
+                    <div class="part1offlexing">
+                        <img src="./images/icon-up.svg" alt="Image">
+                    </div>
+                    <div class="green">
+                        1099 Today
+                    </div>
+                </div>
+            </div>
+            <div class="gridPart4 background" id="backgroundId4">
+                <div class="flex">
+                    <div class="flexPart1">
+                        <img src="./images/icon-youtube.svg" alt="Image">
+                    </div>
+                    <div class="flexPart2">@nathanf</div>
+                </div>
+                <div class="heading" data-val="8239" id="fourthOne">
+                    00
+                </div>
+                <div class="follow">
+                    S u b s c ri b e r s
+                </div>
+                <div class="flexing">
+                    <div class="part1offlexing">
+                        <img src="./images/icon-down.svg" alt="Image">
+                    </div>
+                    <div class="red">
+                        144 Today
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <h1 class="overview" id="itsWhite">Overview - Today</h1>
+        <div class="gridSection2">
+            <div class="doinGrid1 background" id="backgroundId5">
+                <div class="flexAllAround">
+                    <div class="pageView">
+                        Page Views
+                    </div>
+                    <div class="fbIcon">
+                        <img src="./images/icon-facebook.svg" alt="Image">
+                    </div>
+                </div>
+                <div class="flexAllAround">
+                    <div class="h1">
+                        87
+                    </div>
+                    <div class="flexing">
+                        <div class="part1offlexing">
+                            <img src="./images/icon-up.svg" alt="Image">
+                        </div>
+                        <div class="green">
+                            3%
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="doinGrid2 background" id="backgroundId6">
+                <div class="flexAllAround">
+                    <div class="pageView">
+                        Likes
+                    </div>
+                    <div class="fbIcon">
+                        <img src="./images/icon-facebook.svg" alt="Image">
+                    </div>
+                </div>
+                <div class="flexAllAround">
+                    <div class="h1">
+                        52
+                    </div>
+                    <div class="flexing">
+                        <div class="part1offlexing">
+                            <img src="./images/icon-down.svg" alt="Image">
+                        </div>
+                        <div class="red">
+                            2%
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+            <div class="doinGrid3 background" id="backgroundId7">
+                <div class="flexAllAround">
+                    <div class="pageView">
+                        Likes
+                    </div>
+                    <div class="fbIcon">
+                        <img src="./images/icon-instagram.svg" alt="Image">
+                    </div>
+                </div>
+                <div class="flexAllAround">
+                    <div class="h1">
+                        5462
+                    </div>
+                    <div class="flexing">
+                        <div class="part1offlexing">
+                            <img src="./images/icon-up.svg" alt="Image">
+                        </div>
+                        <div class="green">
+                            2257%
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="doinGrid4 background" id="backgroundId8">
+                <div class="flexAllAround">
+                    <div class="pageView">
+                        Profile Views
+                    </div>
+                    <div class="fbIcon">
+                        <img src="./images/icon-instagram.svg" alt="Image">
+                    </div>
+                </div>
+                <div class="flexAllAround">
+                    <div class="h1">
+                        52k
+                    </div>
+                    <div class="flexing">
+                        <div class="part1offlexing">
+                            <img src="./images/icon-up.svg" alt="Image">
+                        </div>
+                        <div class="green">
+                            1375%
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="doinGrid5 background" id="backgroundId9">
+                <div class="flexAllAround">
+                    <div class="pageView">
+                        Retweets
+                    </div>
+                    <div class="fbIcon">
+                        <img src="./images/icon-twitter.svg" alt="Image">
+                    </div>
+                </div>
+                <div class="flexAllAround">
+                    <div class="h1">
+                        117
+                    </div>
+                    <div class="flexing">
+                        <div class="part1offlexing">
+                            <img src="./images/icon-up.svg" alt="Image">
+                        </div>
+                        <div class="green">
+                            303%
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="doinGrid6 background" id="backgroundId10">
+                <div class="flexAllAround">
+                    <div class="pageView">
+                        Likes
+                    </div>
+                    <div class="fbIcon">
+                        <img src="./images/icon-twitter.svg" alt="Image">
+                    </div>
+                </div>
+                <div class="flexAllAround">
+                    <div class="h1">
+                        507
+                    </div>
+                    <div class="flexing">
+                        <div class="part1offlexing">
+                            <img src="./images/icon-up.svg" alt="Image">
+                        </div>
+                        <div class="green">
+                            553%
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="doinGrid7 background" id="backgroundId11">
+                <div class="flexAllAround">
+                    <div class="pageView">
+                        Likes
+                    </div>
+                    <div class="fbIcon">
+                        <img src="./images/icon-youtube.svg" alt="Image">
+                    </div>
+                </div>
+                <div class="flexAllAround">
+                    <div class="h1">
+                        107
+                    </div>
+                    <div class="flexing">
+                        <div class="part1offlexing">
+                            <img src="./images/icon-down.svg" alt="Image">
+                        </div>
+                        <div class="red">
+                            19%
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="doinGrid8 background" id="backgroundId12">
+                <div class="flexAllAround">
+                    <div class="pageView">
+                        Total Views
+                    </div>
+                    <div class="fbIcon">
+                        <img src="./images/icon-youtube.svg" alt="Image">
+                    </div>
+                </div>
+                <div class="flexAllAround">
+                    <div class="h1">
+                        1407
+                    </div>
+                    <div class="flexing">
+                        <div class="part1offlexing">
+                            <img src="./images/icon-down.svg" alt="Image">
+                        </div>
+                        <div class="red">
+                            12%
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="attribution">
+            Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by <a href="https://www.frontendmentor.io/profile/Muhammad-Habban" target="_blank">Muhammad Habban</a>.
+        </div>
+    </main>
+    <script src="main.js"></script>
+</body>
+
+</html>
